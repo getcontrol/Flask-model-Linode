@@ -150,7 +150,19 @@ Transformation Pipeline and Model Sucessfully Loaded
  * Debugger is active!
  * Debugger PIN: 673-488-585
 ```
-## Custom Model Training
-Train your own model.
 
-You can train your own model usig the notebook 
+## Custom Model Training
+
+You can train your own Pycret model using the [Notebook](https://github.com/getcontrol/Flask-model-Linode/blob/main/flask_app/Insurance%20-%20Model%20Training%20Notebook.ipynb):
+
+1.  Train the model and save it with a unique name "mymodel.pkl"
+
+2. Change line 9 (remove file extension) :
+```
+model = load_model('mymodel')
+```
+
+3. Start the app
+```
+python3 app.py
+```
